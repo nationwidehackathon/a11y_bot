@@ -70,7 +70,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
     display: none;
     animation: 0.4s cubic-bezier(0,0,0.2,1) launch-chat; 
-    overflow-y: hidden;
+/*     overflow-y: hidden; */
 }
 
 .chat-box-cont.open {
