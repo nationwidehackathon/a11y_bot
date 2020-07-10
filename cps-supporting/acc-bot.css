@@ -70,6 +70,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
     display: none;
     animation: 0.4s cubic-bezier(0,0,0.2,1) launch-chat; 
+    overflow-y: hidden;
 }
 
 .chat-box-cont.open {
@@ -82,8 +83,4 @@
     width: 100%;
     border: none;
     border-radius: 10px;
-}
-
-.css-1t62idy.css-990gl9{
-    background: red;
 }
