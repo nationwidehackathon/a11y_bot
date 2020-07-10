@@ -109,8 +109,27 @@
 			<!-- <iframe src='https://webchat.botframework.com/embed/AccessibilityEchoBot?s=4SF3UBtP8RU.gANjKiaERJPR92ibAdSixW2uYguLG7XM3NlcXs8RejY'  class="chat-bot-iframe"></iframe>  -->
 			<!-- <iframe src='https://webchat.botframework.com/embed/AccessibilityChatBotNodeJS?s=lT9OGHdrA5M.g7epdD3cTn4pKYMSLNDRtoq-C-F4zFf-2QNAnr0T8c0' class="chat-bot-iframe"></iframe> -->
 			<!-- <iframe class="chat-bot-iframe" id="chat-bot-iframe"></iframe> -->
-			<iframe src='https://webchat.botframework.com/embed/nw-ada-chatbot?s=XJuHv5vj5T4.-ydCl7SnpVbqJBD7HfODu2dpUbo8bcH0zgDRtQcG_LM' class="chat-bot-iframe"></iframe>
+			<!-- <iframe src='https://webchat.botframework.com/embed/nw-ada-chatbot?s=XJuHv5vj5T4.-ydCl7SnpVbqJBD7HfODu2dpUbo8bcH0zgDRtQcG_LM' class="chat-bot-iframe"></iframe> -->
 		</div>
+		<div id="chat-box-cont" class="chat-box-cont></div>
+     			<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+      			<script>
+         			window.WebChat.renderWebChat(
+            			{
+               			directLine: window.WebChat.createDirectLine({
+                  		token: 'XJuHv5vj5T4.-ydCl7SnpVbqJBD7HfODu2dpUbo8bcH0zgDRtQcG_LM'
+               			}),
+              			userID: 'jgeorge5',
+               			username: 'Web Chat User',
+               			locale: 'en-US',
+               			botAvatarInitials: 'AB',
+               			userAvatarInitials: '?'
+            			},
+            			document.getElementById('webchat')
+         			);
+      			</script>
+		<div>
+	
 
 		<button id="bot-button" onclick="toggle_bot()" aria-expanded="false" class="bot-button">
 			<span class="material-icons">chat</span>
