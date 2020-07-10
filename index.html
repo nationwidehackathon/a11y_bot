@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<link type = "text/css" rel="stylesheet" href="cps-supporting/acc-site.css">  <!-- Original Stylesheet Extracted for Nationwide.com (Modified) -->
+	<link type = "text/css" rel="stylesheet" href="cps-supporting/acc-style.css">
+	<link type = "text/css" rel="stylesheet" href="cps-supporting/acc-index.css">
+	<link type = "text/css" rel="stylesheet" href="cps-supporting/acc-bot.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>Nationwide Digital Accessibility Center</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- To start responsive designing-->
+	<meta charset="UTF-8">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- Load Jquery*Required to load first before all scripts*-->
+	<script src="cps-js/acc-main.js" ></script> <!-- *Required*-->
+	<script src="cps-js/acc-load-elements.js"></script> <!-- Load Elements for pages *Required -->
+	<script src="cps-js/acc-nav.js"></script> <!-- Script for opening and closing mobile navigation bar *Required*-->
+	<script src="cps-js/acc-bot-test.js"></script>
+
+	<script>
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', "https://webchat.botframework.com/api/tokens", true);
+		xhr.setRequestHeader('Authorization', 'BotConnector ' + 'lT9OGHdrA5M.g7epdD3cTn4pKYMSLNDRtoq-C-F4zFf-2QNAnr0T8c0');
+		xhr.send();
+		xhr.onreadystatechange = processRequest;
+
+		function processRequest(e) {
+		if (xhr.readyState == 4  && xhr.status == 200) {
+			var response = JSON.parse(xhr.responseText);
+			// alert(response)
+			document.getElementById("chat-bot-iframe").src="https://webchat.botframework.com/embed/AccessibilityChatBotNodeJS?t="+response
+		}
+	}
+
+	</script>
+</head>
+
+<body id="body" class="animate-in">	
+	<header id="load-header"></header>
+
+	<!-- Desktop Navigation -->
+	<nav id="desktop-nav" style="margin: 0px;"></nav>
+
+	<!-- Tablet and Phone Navigation--> 
+	<nav id="mob-nav" class="mob-nav" ></nav>
+
+	<div id="overlay" onclick="dropup()"></div>
+	
+	<main id="main" class="effect" style="margin: 0px auto;">
+		<div class="index-header-desk" style="color: #000000; background: #ffffff; background-repeat: no-repeat; background-attachment: fixed; background-position: center bottom; height: auto; width: 100%;">
+			<!-- <div style="background-color: #000b22; width: 100%; height: 300px; position: absolute; opacity: 0.8;"></div> -->
+			<div class="max-container" style="height: 100%; padding: 50px 0px 50px 0px; z-index: 1; position: relative; margin: 0px auto;">
+				<h1 style="color: #000000; font-size: 6rem; margin-bottom: 20px;">Digital Accessibility Center</h1>
+				<div style="display: grid; grid-template-columns: auto auto auto auto;">
+					<!-- <img src="cps-images/acc-visual.png" width="125px" height="125px" alt="">					
+					<img src="cps-images/acc-hearing.png" width="125px" height="125px" alt="">
+					<img src="cps-images/acc-cognitive.png" width="125px" height="125px" alt="">
+					<img src="cps-images/acc-motor.png" width="125px" height="125px" alt="">  -->
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div class="header-breadcrumbs" id="header-breadcrumbs" aria-hidden="true">
+			<div  class="max-container">
+				Welcome to the Digital Accessibility Center
+			</div>
+		</div>
+
+		<div class="index-header-mob max-container">
+			<h1>Welcome to the Digital Accessibility Center</h1>
+		</div>
+
+		
+
+		<div class="max-container" id="init">
+			<p>Our vision is to <b>drive user accessibility mindset</b> across the enterprise. Digital accessibility is technology put into place to allow a wide range of users to easily navigate the digital space. <br><br>
+				Our strategic mission is to support Nationwide’s objective of <b>providing extraordinary care</b> by:</p>
+
+			<ul>
+				<li>Defining standards, governance support, and policies relevant to digital accessibility across platforms: web, mobile, documents and multimedia</li>
+				<li>Being a trusted advisor to business and IT business partners </li>
+				<li>Providing technology expertise by sharing and building accessibility best practices</li>
+				<li>Providing thought leadership on accessibility strategies with advancement in technologies</li>
+				<li>Imparting knowledge and develop competency through accessibility training courses</li>
+				<li>Integrating process optimization</li>
+				<li>Driving process maturity within the organization</li>
+			</ul>
+
+			<p>Here are some resources you should check out:</p>
+
+			<ul>
+				<li><a href="https://www.nationwide.com/personal/about-us/website-accessibility">Nationwide Web Accessibility Policy <i style="font-size: 1.2em;" aria-label="opens in a new tab" class="material-icons">open_in_new</i></a></li>
+				<li><a href="javascript:void(0)" onclick="openSIM(1)">Web Disability Simulator</a></li>
+				<li><a href="accessibility-acc-for-vend.html">Best practices when working with a vendor or business partner</a></li>
+				<li><a href="accessibility-acc-for-vend.html#anc-vpat">Understanding VPAT</a></li>
+			</ul>
+
+			<p>We hope you find this site helpful.  Please come back and visit us as we continue to update our content.</p>
+
+			<h3><b>Disclaimer:</b></h3>
+			<p>This guidance documentation was created by Nationwide's Digital Accessibility team and is based on WCAG 2.1 AA standards.  Nationwide has chosen to share this information for the benefit of all accessibility initiatives.  This is not meant to replace the W3C's WCAG 2.1 AA guidance documentation, and you should always test your content against the WCAG success criteria to ensure compliance.</p>
+		</div>
+
+		<div id="chat-box-cont" class="chat-box-cont">
+			<!-- <iframe src='https://webchat.botframework.com/embed/AccessibilityEchoBot?s=4SF3UBtP8RU.gANjKiaERJPR92ibAdSixW2uYguLG7XM3NlcXs8RejY'  class="chat-bot-iframe"></iframe>  -->
+			<!-- <iframe src='https://webchat.botframework.com/embed/AccessibilityChatBotNodeJS?s=lT9OGHdrA5M.g7epdD3cTn4pKYMSLNDRtoq-C-F4zFf-2QNAnr0T8c0' class="chat-bot-iframe"></iframe> -->
+			<iframe class="chat-bot-iframe" id="chat-bot-iframe"></iframe>
+		</div>
+
+		<button id="bot-button" onclick="toggle_bot()" aria-expanded="false" class="bot-button">
+			<span class="material-icons">chat</span>
+		</button>
+
+		<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+		<script>
+		// 	var xhr = new XMLHttpRequest();
+		// 	var response;
+		// 	xhr.open('GET', "https://webchat.botframework.com/api/tokens", true);
+		// 	xhr.setRequestHeader('Authorization', 'BotConnector ' + 'lT9OGHdrA5M.g7epdD3cTn4pKYMSLNDRtoq-C-F4zFf-2QNAnr0T8c0');
+		// 	xhr.send();
+		// 	xhr.onreadystatechange = processRequest;
+
+		// 	function processRequest(e) {
+		// 		if (xhr.readyState == 4  && xhr.status == 200) {
+		// 			response = JSON.parse(xhr.responseText);
+		// 			alert(response)
+		// 			// document.getElementById("chat-bot-iframe").src="https://webchat.botframework.com/embed/AccessibilityChatBotNodeJS?t="+response
+		// 		}
+		// 	}
+
+		//    const styleOptions = {
+		// 	  bubbleBackground: 'rgba(0, 0, 255, .1)',
+		// 	  bubbleFromUserBackground: 'rgba(0, 255, 0, .1)'
+		//    };
+  
+		//    window.WebChat.renderWebChat(
+		// 	  {
+		// 		 directLine: window.WebChat.createDirectLine({
+		// 			secret: '4SF3UBtP8RU.gANjKiaERJPR92ibAdSixW2uYguLG7XM3NlcXs8RejY'
+		// 		 }),
+  
+		// 		 // Passing 'styleOptions' when rendering Web Chat
+		// 		 styleOptions
+		// 	  },
+		// 	  document.getElementById('chat-bot-cont')
+		//    );
+
+		//    window.WebChat.renderWebChat(
+        //     {
+        //        directLine: window.WebChat.createDirectLine({
+        //           token: response
+        //        }),
+        //     //    userID: 'YOUR_USER_ID',
+        //        username: 'Web Chat User',
+        //        locale: 'en-US',
+        //        botAvatarInitials: 'WC',
+        //        userAvatarInitials: 'WW'
+        //     },
+        //     document.getElementById('chat-bot-cont')
+        //  );
+		</script>
+	</main>
+
+ 	<footer id="footer" class="nw-footer nw-text-sm "></footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!-- Mobile Navigation Section Only -->
+
+<html lang="en">
+    <head></head>
+    <body>
+		<div class = "mob-tab">
+			<div class = "mob-dropdown">
+				<!-- <button class = "mob-tab-button" >Menu</button> -->
+				<div class="not-show" id="menu-nav-cont">
+					<div class="mob-dropdown-content">
+						<div id="mob-tab-main">
+							<button onclick="openSubMenu('mob-tab-general')" id="mob-btn-general" aria-expanded="false">Introduction<i aria-hidden="true" style="font-size: 1.4em" class="material-icons">chevron_right</i></button>
+							<button onclick="openSubMenu('mob-tab-info')"  aria-expanded="false">Helpful references<i aria-hidden="true" style="font-size: 1.4em" class="material-icons">chevron_right</i></button>
+							<button onclick="openSubMenu('mob-tab-rec-tra')"  aria-expanded="false">Role Based Training<i aria-hidden="true" style="font-size: 1.4em" class="material-icons">chevron_right</i></button>
+							<button onclick="openSubMenu('mob-tab-testing')"  aria-expanded="false">Testing best practices<i aria-hidden="true" style="font-size: 1.4em" class="material-icons">chevron_right</i></button>
+							<button onclick="openSubMenu('mob-tab-tools')"  aria-expanded="false">Tools & simulators<i aria-hidden="true" style="font-size: 1.4em" class="material-icons">chevron_right</i></button>
+						</div>
+
+						<div id="mob-tab-general" class="not-show">
+							<button onclick="closeSubMenu()" aria-expanded="true" class="mob-nav-back"><i aria-hidden="true" style="font-size: 1.4em" class="material-icons">chevron_left</i>Introduction</button>
+
+							<button onclick="window.location.href = 'accessibility-what-is-d-acc.html';">What is digital accessibility?</button><br>
+							<button onclick="window.open('https://www.nationwide.com/personal/about-us/website-accessibility','_blank');">Nationwide's Accessibility Statement <i style="font-size: 1.4em;" aria-label="opens in a new tab" class="material-icons">open_in_new</i></button><br>
+							<button onclick="window.location.href = 'accessibility-whats-next.html';">What's next?</button><br>
+							<button onclick="window.location.href = 'accessibility-acc-for-vend.html';">Working with vendors and understanding VPAT</button><br>
+						</div>
+
+
+						<div id="mob-tab-info" class="not-show">
+							<button onclick="closeSubMenu()" aria-expanded="true" class="mob-nav-back"><i aria-hidden="true" style="font-size: 1.4em" class="material-icons">chevron_left</i>Helpful refereneces</button>
+
+							<button onclick="window.location.href = 'accessibility-training-rec.html';">Bolt Design System <i style="font-size: 1.4em;" aria-label="opens in a new tab" class="material-icons">open_in_new</i></button><br>
+							<button onclick="window.location.href = 'accessibility-training-rec.html';">Job aids</button><br>
+							<button onclick="window.open('https://onyourside.sharepoint.com/sites/accessibility/Shared%20Documents/Forms/AllItems.aspx?id=/sites/accessibility/Shared%20Documents/Training%20Materials%2c%20Job%20Aids%2c%20References/Accessibility%20Job%20Aids/Nationwide%20Developer%20Quick%20Guide%20to%20Prioritize%20Accessibility%202020.pdf&parent=/sites/accessibility/Shared%20Documents/Training%20Materials%2c%20Job%20Aids%2c%20References/Accessibility%20Job%20Aids','_blank');">Nationwide's developers' quick guide to prioritize <i style="font-size: 1.4em;" aria-label="opens in a new tab" class="material-icons">open_in_new</i></button><br>
+							<button onclick="window.open('cps-pdf/BrandGuidelines.pdf','_blank');">Nationwide brand standard <i style="font-size: 1.4em;" aria-label="opens in a new tab" class="material-icons">open_in_new</i></button><br>
+							<button onclick="window.location.href = 'accessibility-video-captioning.html';">The importance of accessible video</button><br>
+							<button onclick="window.location.href = 'accessibility-question-for-vend.html';">Questions to ask vendors</button><br><br>
+
+							<button onclick="window.open('https://www.w3.org/','_blank');">W3C <i style="font-size: 1.4em;" aria-label="opens in a new tab" class="material-icons">open_in_new</i></button><br>
+							<button onclick="window.open('cps-pdf/Digital Accessibility Requirements Checklist Revised 2019 (New).pdf','_blank');">WCAG 2.1 checklist <i style="font-size: 1.4em;" aria-label="opens in a new tab" class="material-icons">open_in_new</i></button><br>
+							<button onclick="window.location.href = 'accessibility-ux-int-colc.html';">Why does color contrast matter?</button><br>
+							<button onclick="window.location.href = 'accessibility-zooming-scrolling.html';">Zooming and scaling</button><br>
+						</div>
+
+						<div id="mob-tab-rec-tra" class="not-show">
+							<button onclick="closeSubMenu()" aria-expanded="true" class="mob-nav-back"><i aria-hidden="true" style="font-size: 1.4em" class="material-icons">chevron_left</i>Role based training</button>
+							<button onclick="window.location.href = 'accessibility-training.html';" class="mob-nav-back">Role based training <i aria-hidden="true" font-size="1.4em" class="material-icons">chevron_right</i></button><br><br>
+
+							<button onclick="window.location.href = 'accessibility-training.html?wrksec=fab';">For all associates/business</button><br>
+							<button onclick="window.location.href = 'accessibility-training.html?wrksec=fcccd';">For content creators or creative designers</button><br>
+							<button onclick="window.location.href = 'accessibility-training.html?wrksec=fdqet';">For developers, testers, quality assurance (QA), user experience (UX)</button><br>
+							<button onclick="window.location.href = 'accessibility-training.html?wrksec=fmd';">For mobile developers</button><br><br>
+
+							<button onclick="window.location.href = 'accessibility-training.html?wrksec=fra';">For requirement analysts</button><br>
+							<button onclick="window.location.href = 'accessibility-training.html?wrksec=fvmcp';">For video and multimedia creator</button><br>
+						</div>
+
+						<div id="mob-tab-testing" class="not-show">
+							<button onclick="closeSubMenu()" aria-expanded="true" class="mob-nav-back"><i aria-hidden="true" style="font-size: 1.4em" class="material-icons">chevron_left</i>Testing best practices</button>
+
+							<button onclick="window.location.href = 'accessibility-auto-testing.html';">Automation testing</button><br>
+							<button onclick="window.location.href = 'accessibility-keyboard-manual-testing.html';">Manual testing</button><br>
+							<button onclick="window.location.href = 'accessibility-mob-testing.html';">Mobile testing</button><br>
+						</div>
+
+						<div id="mob-tab-tools" class="not-show">
+							<button onclick="closeSubMenu()" aria-expanded="true" class="mob-nav-back"><i aria-hidden="true" style="font-size: 1.4em" class="material-icons">chevron_left</i>Tools</button>
+
+							<button onclick="window.location.href = 'accessibility-color-contrast-checker.html';">Color contrast checker</button><br>
+							<button onclick="openSIM(1)">Web Disability Simulator</button><br>
+
+							<h2>Nationwide AppStore</h2>
+							<button onclick="window.open('http://appstore.nwie.net/Shopping/requestItem/search?query=NVDA&viewMode=list&currentPage=1','_blank');">NVDA <i style="font-size: 1.4em;" aria-label="opens in a new tab" class="material-icons">open_in_new</i></button><br>
+							<button onclick="window.open('http://appstore.nwie.net/Shopping/requestItem/search?query=Color%20contrast&viewMode=list&currentPage=1','_blank');">Color Contrast Analyzer <i style="font-size: 1.4em;" aria-label="opens in a new tab" class="material-icons">open_in_new</i></button><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

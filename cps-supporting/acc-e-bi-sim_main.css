@@ -1,0 +1,186 @@
+:root {
+    --sim-f-example: none;
+}
+
+@keyframes simboxAnimation {
+    0% {
+      transform: scale(1.04);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+.sim-gui-box {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 450px;
+    height: 100%;
+    opacity: 1;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(8px);
+    box-shadow: 3px 0px 8px 0 rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    -webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.940);
+    overflow: auto;   
+    scroll-behavior: smooth;
+    animation: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s 1 simboxAnimation; 
+}
+
+.sim-gui-box #tut-sec, .sim-gui-box #sight-sec, .sim-gui-box #raw-sec, .sim-gui-box #shrcut-sec, .sim-gui-box #sight-sec-reg, .sim-gui-box #sight-sec-dis, .sim-gui-box #ups-sec{
+    animation: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s 1 simboxAnimation; 
+}
+
+.sim-example {
+    display: none;
+    overflow: hidden;
+}
+
+.sim-gui-box:focus, .sim-gui-box:hover, .sim-gui-box:active {
+    background-color: #ffffff;
+    opacity: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.sim-gui-box h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1.3em;
+    border-bottom: 2px solid rgb(0, 0, 0,0.3);
+    text-align: center;
+}
+
+.sim-gui-box h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.sim-gui-box h3, .sim-gui-box label {
+    font-weight: 500;
+}
+
+
+/* Buttons */
+
+.sim-button-close {
+    background-color: #fdf4f4;
+    border: 1.3px solid #992727;
+    color: #611a1a;
+    font-size: 1em;
+    padding: 20px 40px 20px 40px;
+    /* box-shadow: 0 0px 8px 0 #51000031; */
+    border-left: none;
+    border-top: none;
+    border-bottom-right-radius: 25px;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    position: absolute;
+    left: 0px; top: 0px;
+    }
+
+.sim-pp-buttons {
+    background-color: #f2effc;
+    border: 1.3px solid #615091;
+    color: #403a60;
+    font-size: 1em;
+    padding: 10px 20px 10px 20px;
+    /* box-shadow: 0 0px 8px 0 #2a005131; */
+    border-radius: 20px;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    margin: 10px;
+    }
+
+.sim-pp-buttons:focus {
+    border: 2px solid #615091;
+    box-shadow: 0 0px 8px 0 #3a244e5b;
+    }
+
+.sim-pp-buttons:hover {
+    box-shadow: 0 0px 8px 0 #3a244ea2;
+    transform: scale(1.02);
+    }
+
+.sim-tg-button {
+    z-index: 3;
+    background-color: #f2effc;
+    border: 1.3px solid #615091;
+    color: #403a60;
+    font-size: 1em;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    box-shadow: 0 0px 8px 0 #0d2f5831;
+    border-radius: 20px;
+    /* outline: none; */
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    margin: 10px 0 10px 0;
+}
+
+.sim-tg-buttons:focus {
+    border: 2px solid #615091;
+    box-shadow: 0 0px 8px 0 #3a244e5b;
+    transform: scale(1.02);
+    }
+
+.sim-tg-buttons:hover {
+    box-shadow: 0 0px 8px 0 #3a244ea2;
+    transform: scale(1.02);
+    }
+
+.sim-red-button {
+    z-index: 3;
+    background-color: #fdf4f4;
+    border: 1.3px solid #992727;
+    color: #611a1a;
+    font-size: 1em;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    box-shadow: 0 0px 8px 0 #580d0d31;
+    border-radius: 20px;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    margin: 10px 0 10px 0;
+}
+
+.sim-red-buttons:focus {
+    border: 2px solid #992727;;
+    box-shadow: 0 0px 8px 0 #5100005b;
+    transform: scale(1.02);
+    }
+
+.sim-red-buttons:hover {
+    box-shadow: 0 0px 8px 0 #510000a2;
+    transform: scale(1.02);
+    }
+
+@media screen and (max-width: 768px) {
+    @keyframes simboxAnimation {
+        0% {
+            transform: scale(1.04);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .sim-gui-box {
+        text-align: center;
+        opacity: 1;
+        padding: 30px;
+        width: 100% !important; 
+    }
+
+    .sim-example {
+        background: #ffffff;
+        border-bottom: 1px solid rgb(0, 0, 0,0.1);
+        display: block;
+    }
+}
