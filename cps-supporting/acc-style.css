@@ -134,7 +134,7 @@ img:hover {
     top: 6px;
     margin-right: 5px;
     margin-left: 5px;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     font-feature-settings: 'liga';
 }
 
