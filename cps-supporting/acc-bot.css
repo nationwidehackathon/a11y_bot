@@ -52,6 +52,7 @@
 
 .bot-button.open .material-icons {
     font-size: 1.3em; 
+    opacity: 1;
     /* margin-bottom: 8px;   */
 }
 
@@ -76,7 +77,8 @@
 }
 
 .chat-bot-iframe {
-    height: 100%;
+    max-height: 600px;
+    height: calc(100vh - 60px - 15px * 3);
     width: 100%;
     border: none;
     border-radius: 10px;
