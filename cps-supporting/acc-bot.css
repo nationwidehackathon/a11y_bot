@@ -64,7 +64,7 @@
     bottom: 72px;
     right: 32px;
     max-height: 600px;
-    height: calc(100vh - 60px - 15px * 3);
+    height: calc(50vh - 60px - 15px * 3);
     width: 375px;
     border-top-left-radius: 10px; border-top-right-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
