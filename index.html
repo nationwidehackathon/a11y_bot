@@ -19,10 +19,10 @@
 	<script src="cps-js/acc-nav.js"></script> <!-- Script for opening and closing mobile navigation bar *Required*-->
 	<script src="cps-js/acc-bot-test.js"></script>
 
-	<script>
+	<!-- <script>
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', "https://webchat.botframework.com/api/tokens", true);
-		xhr.setRequestHeader('Authorization', 'BotConnector ' + 'lT9OGHdrA5M.g7epdD3cTn4pKYMSLNDRtoq-C-F4zFf-2QNAnr0T8c0');
+		xhr.setRequestHeader('Authorization', 'BotConnector ' + 'XJuHv5vj5T4.-ydCl7SnpVbqJBD7HfODu2dpUbo8bcH0zgDRtQcG_LM');
 		xhr.send();
 		xhr.onreadystatechange = processRequest;
 
@@ -30,11 +30,11 @@
 		if (xhr.readyState == 4  && xhr.status == 200) {
 			var response = JSON.parse(xhr.responseText);
 			// alert(response)
-			document.getElementById("chat-bot-iframe").src="https://webchat.botframework.com/embed/AccessibilityChatBotNodeJS?t="+response
+			document.getElementById("chat-bot-iframe").src="https://webchat.botframework.com/embed/nw-ada-chatbot?t="+response
 		}
 	}
 
-	</script>
+	</script> -->
 </head>
 
 <body id="body" class="animate-in">	
@@ -108,14 +108,15 @@
 		<div id="chat-box-cont" class="chat-box-cont">
 			<!-- <iframe src='https://webchat.botframework.com/embed/AccessibilityEchoBot?s=4SF3UBtP8RU.gANjKiaERJPR92ibAdSixW2uYguLG7XM3NlcXs8RejY'  class="chat-bot-iframe"></iframe>  -->
 			<!-- <iframe src='https://webchat.botframework.com/embed/AccessibilityChatBotNodeJS?s=lT9OGHdrA5M.g7epdD3cTn4pKYMSLNDRtoq-C-F4zFf-2QNAnr0T8c0' class="chat-bot-iframe"></iframe> -->
-			<iframe class="chat-bot-iframe" id="chat-bot-iframe"></iframe>
+			<!-- <iframe class="chat-bot-iframe" id="chat-bot-iframe"></iframe> -->
+			<iframe src='https://webchat.botframework.com/embed/nw-ada-chatbot?s=XJuHv5vj5T4.-ydCl7SnpVbqJBD7HfODu2dpUbo8bcH0zgDRtQcG_LM' class="chat-bot-iframe"></iframe>
 		</div>
 
 		<button id="bot-button" onclick="toggle_bot()" aria-expanded="false" class="bot-button">
 			<span class="material-icons">chat</span>
 		</button>
 
-		<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+		<!-- <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script> -->
 		<script>
 		// 	var xhr = new XMLHttpRequest();
 		// 	var response;
