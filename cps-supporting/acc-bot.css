@@ -31,8 +31,8 @@
 }
 
 .bot-button:hover {
-    border: 3px solid #ac7be0;
-    box-shadow: 0 0 10px rgb(172, 123, 224);
+    border: 3px solid #33537D;
+    box-shadow: 0 0 10px #3576BA;
 }
 
 .bot-button .material-icons {
